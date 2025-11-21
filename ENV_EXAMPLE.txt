@@ -1,0 +1,37 @@
+# GCP Configuration
+GCP_PROJECT_ID=your-project-id
+GCP_REGION=us-central1
+
+# Data Source Configuration
+DATA_SOURCE=firestore
+# Options: "firestore" or "bigquery"
+
+# BigQuery Configuration (if using BigQuery)
+BIGQUERY_DATASET=legal_data
+BIGQUERY_CASE_TABLE=legal_cases
+BIGQUERY_STATUTE_TABLE=statutes
+
+# Firestore Configuration (if using Firestore)
+FIRESTORE_CASES_COLLECTION=legal_cases
+FIRESTORE_STATUTES_COLLECTION=statutes
+FIRESTORE_ACTS_COLLECTION=acts
+
+# Vertex AI Configuration
+VERTEX_AI_LOCATION=us-central1
+VERTEX_AI_INDEX_ENDPOINT=your-index-endpoint-id
+
+# Gemini API Configuration
+GEMINI_API_KEY=your-gemini-api-key
+GEMINI_MODEL_FLASH=gemini-1.5-flash
+GEMINI_MODEL_PRO=gemini-1.5-pro
+
+# Service URLs (for agent communication)
+LEGAL_SEARCH_AGENT_URL=http://localhost:8001
+LEGAL_AI_AGENT_URL=http://localhost:8002
+
+# Authentication
+API_KEY=your-secure-api-key
+
+# Logging
+LOG_LEVEL=INFO
+
